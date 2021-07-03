@@ -12,13 +12,14 @@
         <title>John Bouma</title>
         <script>
             function myFunction() {
-              location.href"https://boyoquiz.com")
+              location.href("https://boyoquiz.com")
             }
             </script>
 
 </head>
 <body>
 	Form
+        <br>
 	<br>
     <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSejh3tfI-lOc6QUz4tP4YSS8YVS2AdC4L8p37jAaPDPO-CJtw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
         Name:<br>
@@ -32,7 +33,8 @@
         <input type="submit" value="submit" onclick="">
   </form>
 						      
+	  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+					      
 	</body>
 </html>					      
 
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
