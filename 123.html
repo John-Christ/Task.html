@@ -2,12 +2,18 @@
 <html>
   <head>
     <script>
-      {
-  "cache-control": "no-cache,max-age=0",
-  "content-length": "288",
-  "content-type": "application/json; charset=utf-8",
-  "x-jwt-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwZTBmMGQ0OGFhOTAyNmFmYmVlYWM5ZSJ9LCJmb3JtIjp7Il9pZCI6IjU1M2RiOTRlNzJmNzAyZTcxNGRkOTc3OSIsInByb2plY3QiOiI1NTNkYjkyZjcyZjcwMmU3MTRkZDk3NzgifSwib3JpZ2luIjoiaHR0cHM6Ly9hcGkuZm9ybS5pbyIsInByb2plY3QiOnsiX2lkIjoiNTUzZGI5MmY3MmY3MDJlNzE0ZGQ5Nzc4In0sImlhdCI6MTYyNTM1ODE1OSwiZXhwIjoxNjYxNjQ2MTU5fQ.PSwjesCvWoJclFHARvT-tIl3pZVNR8ry42Vx4HCWpDk"
-}
+    curl --location -g --request POST '{{https://zakwrdtkgdgpjie.form.io}}/{{form1}}/validate' \
+--header 'x-jwt-token: {{token}}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"data": {
+		"firstName": "Joe",
+		"email": "joe@example.com"
+	}
+}'
+
+
+
     </script>
     </heaed>
   <body>
