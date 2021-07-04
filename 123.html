@@ -2,7 +2,7 @@
 <html>
   <head>
     <script>
-    curl --location -g --request POST '{{https://zakwrdtkgdgpjie.form.io}}/{{form1}}/validate' \
+    curl --location -g --request POST '{{https://zakwrdtkgdgpjie.form.io}}/{{https://zakwrdtkgdgpjie.form.io/form1}}/validate' \
 --header 'x-jwt-token: {{token}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -21,8 +21,10 @@
     <form method=post action=https://zakwrdtkgdgpjie.form.io/form1/submission>
    
       
-    <input value=string name=name>
-    <input key=email value=string>
+    <input value=firstName id=string>
+	    <br>
+    <input value=email id=string>
+	    <br>
       
       
       <input type=submit>
@@ -31,30 +33,50 @@
       <script>
        
        {
-  "isJoi": true,
-  "name": "ValidationError",
-  "details": [
+{
+  "form": "string",
+  "owner": {},
+  "roles": [
+    "string"
+  ],
+  "access": [
     {
-      "message": "\"email\" must be a valid email",
-      "path": [
-        "email"
-      ],
-      "type": "string.email",
-      "context": {
-        "value": "string",
-        "key": "email",
-        "label": "email"
-      }
+      "type": "string",
+      "resources": [
+        "string"
+      ]
     }
   ],
-  "_object": {
+  "externalIds": [
+    {
+      "type": "string",
+      "resource": "string",
+      "id": "string",
+      "_id": "string",
+      "created": "2021-07-04",
+      "modified": "2021-07-04"
+    }
+  ],
+  "metadata": {},
+  "data": {
     "name": "string",
     "email": "string"
   },
-  "_validated": {
-    "name": "string",
-    "email": "string"
-  }
+  "externalTokens": [
+    {
+      "type": "string",
+      "token": "string",
+      "exp": "2021-07-04",
+      "_id": "string"
+    }
+  ],
+  "_id": "string",
+  "created": "2021-07-04",
+  "modified": "2021-07-04",
+  "_vid": 0,
+  "_fvid": 0,
+  "project": "string",
+  "state": "string"
 }
       </script>
       
