@@ -5,12 +5,15 @@
     curl --location -g --request POST '{{https://zakwrdtkgdgpjie.form.io}}/{{https://zakwrdtkgdgpjie.form.io/form1}}/validate' \
 --header 'x-jwt-token: {{token}}' \
 --header 'Content-Type: application/json' \
---data-raw '{
-	"data": {
+function myFunction () {
+	data: { 
 		"firstName": "Joe",
 		"email": "joe@example.com"
 	}
-}'
+document.getElementById("name").innerHTML = data.firstname;
+document.getElementById("email").innerHTML = data.email;
+
+}
 
 
 
@@ -18,16 +21,16 @@
     </heaed>
   <body>
     
-    <form method=post action=https://zakwrdtkgdgpjie.form.io/form1/submission>
+    <form>
    
       
-    <input value=firstName id=string>
+    <input  id=name>
 	    <br>
-    <input value=email id=string>
+    <input  id=email>
 	    <br>
       
       
-      <input type=submit>
+      <input type="submit" value="submit" onclick="myFunction()">
 
       
       <script>
@@ -51,8 +54,8 @@
     {
       "type": "string",
       "resource": "string",
-      "id": "string",
-      "_id": "string",
+      "id": "name",
+      "_id": "email",
       "created": "2021-07-04",
       "modified": "2021-07-04"
     }
